@@ -1,0 +1,7 @@
+{
+  "name": "FinalDawm",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
