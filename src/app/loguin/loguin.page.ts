@@ -47,7 +47,7 @@ export class LoguinPage implements OnInit {
      this.data.forEach((datos)=>{
       if(datos.password==password){
         console.log("Entra");
-        this.router.navigate(['tab'])
+        this.router.navigate(['tabs'])
       }
      })
 

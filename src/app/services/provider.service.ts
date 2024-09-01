@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProviderService {
   private URL="https://finaldawm-default-rtdb.firebaseio.com/Usuarios.json"
-
+  private URL2=""
   constructor(private Http:HttpClient) { }
   getResponse(){
     return this.Http.get( this.URL);
