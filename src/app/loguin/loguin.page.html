@@ -5,7 +5,20 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
- <ion-item>
-  <ion-label>Hola</ion-label>
- </ion-item>
+ <form [formGroup]="loguinform" (ngSubmit)="Loguin()">
+  <ion-item>
+    <ion-input type="text" formControlName="Usuario" placeholder="Ingresse su Usuario"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input
+      type="password"
+      formControlName="password"
+      placeholder="Ingresa tu contraseña"
+    ></ion-input>
+  </ion-item>
+  <ion-button expand="full" type="submit"  >
+    Iniciar sesión
+  </ion-button>
+ </form>
+
 </ion-content>
