@@ -6,7 +6,6 @@ import { IonicModule } from '@ionic/angular';
 import { HttpClientModule } from  '@angular/common/http';
 import { Datos} from '../interfaces/datos';
 import { ProviderService } from '../services/provider.service';
-
 @Component({
   selector: 'app-loguin',
   templateUrl: './loguin.page.html',
@@ -42,6 +41,7 @@ export class LoguinPage implements OnInit {
   }
   Loguin(){
     const {user, password}=this.loguinform?.value
+    
     try{
       this.getData()
      this.data.forEach((datos)=>{
@@ -55,8 +55,5 @@ export class LoguinPage implements OnInit {
       console.error("Error")
 
     }
-  
-    
-    
   }
 }
