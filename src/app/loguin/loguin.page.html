@@ -1,22 +1,39 @@
-<ion-header [translucent]="true">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<ion-header [translucent]="true"> 
   <ion-toolbar>
-    <ion-title>Loguin</ion-title>
+    <ion-title>
+      Teclike
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
- <form [formGroup]="loguinform" (ngSubmit)="Loguin()">
-  <ion-item>
-    <ion-input type="text" formControlName="Usuario" placeholder="Ingresse su Usuario"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-input
-      type="password"
-      formControlName="password"
-      placeholder="Ingresa tu contraseña"
-    ></ion-input>
-  </ion-item>
-  <ion-button expand="full" type="submit"  >
-    Iniciar sesión
-  </ion-button>
- </form>
+  <ion-grid class="grid-vacio">
+    
+  </ion-grid>
+  <ion-grid class="grid-form">
+    <ion-row class="row-form">
+      <ion-card class="card-form">
+        <ion-card-title class="login-tittle">Login</ion-card-title>
+        <ion-card-content>
+          Enter your email address and 
+          password to access your account.
+        </ion-card-content>
+        <form [formGroup]="loguinform" (ngSubmit)="Loguin()">
+          <ion-item>
+            <ion-input type="text" formControlName="Usuario" placeholder="Ingresse su Usuario"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input
+              type="password"
+              formControlName="password"
+              placeholder="Ingresa tu contraseña"
+            ></ion-input>
+          </ion-item>
+          <ion-button expand="full" type="submit"  >
+            Iniciar sesión
+          </ion-button>
+         </form>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
 </ion-content>

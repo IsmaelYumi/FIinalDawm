@@ -6,12 +6,13 @@ import { IonicModule } from '@ionic/angular';
 import { HttpClientModule } from  '@angular/common/http';
 import { Datos} from '../interfaces/datos';
 import { ProviderService } from '../services/provider.service';
+
 @Component({
   selector: 'app-loguin',
   templateUrl: './loguin.page.html',
   styleUrls: ['./loguin.page.scss'],  
   standalone: true,
-  imports: [CommonModule, FormsModule,ReactiveFormsModule,IonicModule,HttpClientModule],
+  imports: [CommonModule, FormsModule,ReactiveFormsModule,IonicModule,HttpClientModule, ],
   providers:[ProviderService]
 })
 export class LoguinPage implements OnInit {

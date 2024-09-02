@@ -1,0 +1,113 @@
+ion-header {
+    ion-toolbar {
+      --background: linear-gradient(90deg, #182E51, #354f88);
+      --color: #fff;
+      height: 3.8rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+  ion-header {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  ion-title {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0px;
+  }
+
+  .login-tittle {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-left: 16px;
+    
+  }
+
+/* Fondo del contenido */
+    ion-content {
+    --background: url('/assets/img/1.jpg') no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 16px;
+    color: #333;
+    overflow: hidden;
+    --keyboard-offset: 0 !important;
+    }
+
+  .grid-vacio{
+    height: 30%;
+
+  }
+
+  .grid-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+  }
+
+  .row-form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-form{
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin: 10px;
+
+  }
+  
+  /* Contenedor principal del formulario */
+  form {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    padding: 20px;
+    background-color: transparent !important;
+  }
+  
+  
+  /* Estilo de los ion-items */
+  ion-item {
+    --background: transparent;
+    margin-bottom: 16px;
+    --border-radius: 12px;
+    --padding-start: 12px;
+    --color: #666;
+    --placeholder-color: #aaa;
+  }
+  
+  /* Input fields styling */
+  ion-input {
+    --placeholder-color: #aaa;
+    --color: #333;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    
+  }
+  
+  /* Botón de inicio de sesión */
+  ion-button {
+    --background: #A2D8FF;
+    --border-radius: 12px;
+    --color: #343434;
+    width: 70%;
+    margin-top: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 15%;
+  }
+  
+  
+  

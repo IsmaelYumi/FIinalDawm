@@ -1,0 +1,109 @@
+ion-header {
+    ion-toolbar {
+      --background: linear-gradient(90deg, #182E51, #354f88);
+      --color: #fff;
+      height: 3.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  ion-header {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  ion-title, .PersonalizarBoton {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .cardBackground {
+    padding: 0;
+    margin: 0;
+    height: 15.5rem;
+    width: 100%;
+    background-image: url('/assets/img/setup2.png');
+    background-size: cover;  
+    background-position: center;
+    position: relative;
+  }
+  
+  .PersonalizarBoton {
+    position: absolute;
+    bottom: 0px;
+    right: 0px; 
+    z-index: 10;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.16); 
+    --background: #A2D8FF;  /* Ajusta el fondo para el ion-button */
+    border-radius: 7px;  /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 0px -8px 15px 0px;
+    padding: 0px 5px 0px 0px;
+    text-transform: none !important;  
+    font-weight: bold;
+  }
+  
+  .PersonalizarBoton,
+  .cardProducts {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .PersonalizarBoton:hover,
+  .cardProducts:hover {
+    transform: translateY(-2px); /* Un ligero efecto de "elevación" al pasar el cursor */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más profunda al pasar el cursor */
+  }
+  
+  
+  .PersonalizaTittle {
+    color: #1c1c1c;
+    font-weight: bold;
+    font-size: 0.98rem;
+  }
+  
+  .cardProducts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    --background: #ecf0f1;
+    border-radius: 8px;
+  }
+  
+  .imgProducts {
+    width: auto;
+    height: 7.5rem;
+    border-radius: 8px;
+    object-fit: contain;
+  
+  }
+  
+  ion-card-content {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #356293;
+  }
+  
+  ion-content {
+    --background: #ecf0f1;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .PersonalizarBoton {
+      font-size: 0.85rem; /* Reduce el tamaño del texto en pantallas pequeñas */
+      padding: 5px 10px; /* Ajusta el padding para pantallas más pequeñas */
+    }
+  
+    .imgProducts {
+      height: 6.5rem; /* Ajusta la altura de las imágenes de productos */
+    }
+  
+    .cardProducts {
+      margin: 5px; /* Reduce el margen entre las tarjetas de productos */
+    }
+  }
+  
