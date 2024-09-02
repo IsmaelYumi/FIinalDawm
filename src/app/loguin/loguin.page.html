@@ -1,38 +1,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 <ion-header [translucent]="true"> 
   <ion-toolbar>
-    <ion-title>
-      Teclike
-    </ion-title>
+    <ion-title>Teclike</ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content [fullscreen]="true">
-  <ion-grid class="grid-vacio">
-    
-  </ion-grid>
+  <!-- Grid para manejar el espaciado superior -->
+  <ion-grid class="grid-vacio"></ion-grid>
+  
+  <!-- Grid principal para el formulario -->
   <ion-grid class="grid-form">
     <ion-row class="row-form">
       <ion-card class="card-form">
-        <ion-card-title class="login-tittle">Login</ion-card-title>
+        <!-- Título del formulario -->
+        <ion-card-title class="login-title">Login</ion-card-title>
+        
+        <!-- Descripción del formulario -->
         <ion-card-content>
-          Enter your email address and 
-          password to access your account.
+          Enter your email address and password to access your account.
         </ion-card-content>
+        
+        <!-- Formulario de login -->
         <form [formGroup]="loguinform" (ngSubmit)="Loguin()">
+          <!-- Campo de entrada para el usuario -->
           <ion-item>
-            <ion-input type="text" formControlName="Usuario" placeholder="Ingresse su Usuario"></ion-input>
+            <ion-label position="floating" aria-label="Username">Usuario</ion-label>
+            <ion-input 
+              type="text" 
+              formControlName="Usuario" 
+              placeholder="Ingresa tu Usuario">
+            </ion-input>
           </ion-item>
+          
+          <!-- Campo de entrada para la contraseña -->
           <ion-item>
-            <ion-input
-              type="password"
-              formControlName="password"
-              placeholder="Ingresa tu contraseña"
-            ></ion-input>
+            <ion-label position="floating" aria-label="Password">Contraseña</ion-label>
+            <ion-input 
+              type="password" 
+              formControlName="password" 
+              placeholder="Ingresa tu contraseña">
+            </ion-input>
           </ion-item>
-          <ion-button expand="full" type="submit"  >
+          
+          <!-- Botón de inicio de sesión -->
+          <ion-button expand="full" type="submit">
             Iniciar sesión
           </ion-button>
-         </form>
+        </form>
       </ion-card>
     </ion-row>
   </ion-grid>

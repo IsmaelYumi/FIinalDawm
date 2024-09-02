@@ -21,8 +21,8 @@ export class LoguinPage implements OnInit {
 
   constructor(private formBuilder:FormBuilder, private router:Router, private dataProvider: ProviderService) {
     this.loguinform = this.formBuilder.group({
-      Usuario: ['Usuario', [Validators.required]],
-      password: ['password', [Validators.required, Validators.minLength(6)]],
+      Usuario: ['ismael', [Validators.required]],
+      password: ['password123', [Validators.required, Validators.minLength(6)]],
     });
    }
   ngOnInit() {
