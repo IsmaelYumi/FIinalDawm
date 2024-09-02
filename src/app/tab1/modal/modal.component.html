@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ data.texto }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h1>{{ data.texto }}</h1>
+  <p>{{ data.description }}</p> <!-- Mostrar la descripción -->
+  <ion-img [src]="data.imageUrl"></ion-img>
+</ion-content>

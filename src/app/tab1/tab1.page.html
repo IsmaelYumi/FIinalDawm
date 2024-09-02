@@ -1,4 +1,5 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 <ion-header [translucent]="true"> 
   <ion-toolbar>
     <ion-buttons slot="start">
@@ -22,41 +23,17 @@
     </ion-button>
   </ion-card>
 
-  <ion-grid>
+   <ion-grid>
     <ion-row>
-      <ion-col size="6">
-        <ion-card class="cardProducts">
-          <img class="imgProducts" src="/assets/img/teclado-z11.png" alt="Teclado" />
-          <ion-card-content>
-            Teclado
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col size="6">
-        <ion-card class="cardProducts">
-          <img class="imgProducts" src="/assets/img/mouse-x11.png" alt="Mouse" />
-          <ion-card-content>
-            Mouse
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="6">
-        <ion-card class="cardProducts">
-          <img class="imgProducts" src="/assets/img/audifonos-razer.png" alt="Audífonos" />
-          <ion-card-content>
-            Audífonos
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col size="6">
-        <ion-card class="cardProducts">
-          <img class="imgProducts" src="/assets/img/reloj-digital.png" alt="Reloj" />
-          <ion-card-content>
-            Reloj
-          </ion-card-content>
-        </ion-card>
+      <ion-col size="6" *ngFor="let product of products">
+        <ion-nav-link router-direction="forward" [component]="modal" [componentProps]="{data: product}">
+          <ion-card class="cardProducts">
+            <img class="imgProducts" [src]="product.imageUrl" [alt]="product.texto" />
+            <ion-card-content>
+              {{ product.texto }}
+            </ion-card-content>
+          </ion-card>
+        </ion-nav-link>
       </ion-col>
     </ion-row>
   </ion-grid>

@@ -1,0 +1,122 @@
+.custom-star {
+    font-size: 24px; 
+    color: yellow;    
+    border-radius: 50%; 
+    padding: 4px;  
+    margin-right: 4px; 
+    box-shadow: none; 
+    background-color: transparent; 
+}
+
+ion-badge {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2px;  
+}
+
+ion-item {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    justify-content: center; /* Alinea horizontalmente los elementos en el centro */
+    flex-direction: column; /* Coloca la imagen y el texto en columna */
+    background-color: #f0f4ff; /* Fondo claro para el item */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espacio interno */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 10px; /* Espacio entre los items */
+}
+
+ion-img {
+    width: 100px;  /* Ancho de la imagen */
+    height: 100px; /* Altura de la imagen */
+    object-fit: contain; /* Asegura que toda la imagen se vea sin recortes */
+    display: block;
+    margin: 10px auto; /* Centra la imagen y añade un margen */
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para la imagen */
+}
+
+ion-label {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    text-align: center; /* Alinea el texto al centro */
+    width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
+    padding-left: 0; /* Espacio entre la imagen y el texto */
+    font-weight: bold; /* Texto en negrita */
+    color: #182E51; /* Color del texto */
+}
+
+ion-header {
+    ion-toolbar {
+        --background: linear-gradient(90deg, #182E51, #354f88);
+        --color: #fff;
+        height: 3.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+ion-content {
+    --background: linear-gradient(90deg, #182E51, #354f88);
+}
+
+.grid-buttons {
+    background-color: transparent !important;
+    padding: 9% 0% 6% 0%;
+}
+
+.row-button-container {
+    margin: 0%;
+    padding: 0% 12%;
+    background-color:transparent;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.custom-button {
+    --background: #ffffff;
+    --color: #182E51;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    text-transform: none !important;
+}
+
+.custom-button ion-icon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+.grid-modelado {
+    background-color:transparent !important;
+    padding: 0%;
+}
+
+.col-image {
+    padding: 0%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    size: cover;  
+    position: center;
+    width: 100%;
+}
+
+.setup-image {
+    width: 600rem;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    left: 50%; 
+    transform: translateX(-25%);
+}
